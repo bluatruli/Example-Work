@@ -1,0 +1,81 @@
+﻿<UserControl x:Class="FSToolbox.Onboarding.SystemInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+              xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:uc="clr-namespace:FSToolbox.Resources.CustomControls"
+             xmlns:local="clr-namespace:FSToolbox.Onboarding"
+             mc:Ignorable="d" 
+             d:DesignHeight="533" d:DesignWidth="1019">
+    <Grid>
+        <Border BorderBrush="#3369FF" BorderThickness="1" CornerRadius="10"  Width="301" Height="498" 
+                MinWidth="301" Background="Black">
+            <Grid x:Name="fsToolboxPopupWin">
+
+                <Button HorizontalAlignment="Right" VerticalAlignment="Top"
+                    Style="{DynamicResource CircleButtonMahAppsStyleEdit}" Margin="0,10,10,0" >
+                    <Image x:Name="close_Btn" Source="pack://siteoforigin:,,,/Resources/close.png" Width="16" Height="16"/>
+                </Button>
+
+                <StackPanel Orientation="Vertical" Margin="0,10,0,0">
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button x:Name="back_Btn" Style="{DynamicResource HeaderButtonStyle}"/>
+                        <Label Content="System Info" Style="{DynamicResource HeaderStyleBig}" />
+                    </StackPanel>
+
+                    <ComboBox x:Name="productLine_CB" Style="{DynamicResource ComboBoxStyle}" mah:TextBoxHelper.Watermark="Product Line" >
+                        <ComboBoxItem Content="ComboBox Item 1"/>
+                        <ComboBoxItem Content="ComboBox Item 2"/>
+                        <ComboBoxItem Content="ComboBox Item 3"/>
+                        <ComboBoxItem Content="ComboBox Item 4"/>
+                    </ComboBox>
+
+                    <ComboBox x:Name="simulatorModel_CB" Style="{DynamicResource ComboBoxStyle}" mah:TextBoxHelper.Watermark="Simulator Model" >
+                        <ComboBoxItem Content="ComboBox Item 1"/>
+                        <ComboBoxItem Content="ComboBox Item 2"/>
+                        <ComboBoxItem Content="ComboBox Item 3"/>
+                        <ComboBoxItem Content="ComboBox Item 4"/>
+                    </ComboBox>
+
+                    <ComboBox x:Name="simulatorSize_CB" Style="{DynamicResource ComboBoxStyle}" mah:TextBoxHelper.Watermark="Simulator Size" >
+                        <ComboBoxItem Content="ComboBox Item 1"/>
+                        <ComboBoxItem Content="ComboBox Item 2"/>
+                        <ComboBoxItem Content="ComboBox Item 3"/>
+                        <ComboBoxItem Content="ComboBox Item 4"/>
+                    </ComboBox>
+
+                    <ComboBox x:Name="trackingType_CB" Style="{DynamicResource ComboBoxStyle}" mah:TextBoxHelper.Watermark="Tracking Type" >
+                        <ComboBoxItem Content="ComboBox Item 1"/>
+                        <ComboBoxItem Content="ComboBox Item 2"/>
+                        <ComboBoxItem Content="ComboBox Item 3"/>
+                        <ComboBoxItem Content="ComboBox Item 4"/>
+                    </ComboBox>
+
+                    <uc:ComboBoxDropUp x:Name="interface_CB" mah:TextBoxHelper.Watermark="Interface" Style="{DynamicResource ComboBoxDropUpStyle}">
+                        <ComboBoxItem Content="ComboBox Item 1"/>
+                        <ComboBoxItem Content="ComboBox Item 2"/>
+                        <ComboBoxItem Content="ComboBox Item 3"/>
+                        <ComboBoxItem Content="ComboBox Item 4"/>
+                    </uc:ComboBoxDropUp>
+
+                    <uc:ComboBoxDropUp x:Name="trackingSystem_CB" mah:TextBoxHelper.Watermark="Tracking System" Style="{DynamicResource ComboBoxDropUpStyle}">
+                        <ComboBoxItem Content="ComboBox Item 1"/>
+                        <ComboBoxItem Content="ComboBox Item 2"/>
+                        <ComboBoxItem Content="ComboBox Item 3"/>
+                        <ComboBoxItem Content="ComboBox Item 4"/>
+                    </uc:ComboBoxDropUp>
+
+                </StackPanel>
+
+                <Button x:Name="submit_Btn" HorizontalAlignment="Center" Style="{DynamicResource ButtonMahAppsStyleEdit}" Content="Submit" Width="161" Height="40" VerticalAlignment="Bottom" Margin="0,0,0,20" Tag=""/>
+
+
+
+            </Grid>
+        </Border>
+
+
+    </Grid>
+</UserControl>

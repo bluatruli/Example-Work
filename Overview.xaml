@@ -1,0 +1,58 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FSToolbox"
+             xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Class="FSToolbox.Overview"
+    xmlns:uc="clr-namespace:FSToolbox.Resources.CustomControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="485" d:DesignWidth="999">
+    <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <uc:TileBackground Title="ACCOUNT INFO" Height="420" Width="264" IsEditable="False">
+                <uc:TileBackground.TileContext>
+                    <ScrollViewer HorizontalContentAlignment="Center">
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                            <uc:MainComponentTemplate Subheader="Customer" LabelContent="customerName" Margin="0,0,0,13" />
+                            <uc:MainComponentTemplate Subheader="Salesforce ID" LabelContent="0000000Tfdfv" Margin="0,0,0,13"/>
+                            <uc:MainComponentTemplate Subheader="Teamviewer ID" LabelContent="0 000 000 000" Margin="0,0,0,13"/>
+                            <uc:MainComponentTemplate Subheader="Simulator ID" LabelContent="0000" Margin="0,0,0,13"/>
+                            <uc:MainComponentTemplate Subheader="Simulator Model" LabelContent="computerModel" Margin="0,0,0,13"/>
+                            <uc:MainComponentTemplate Subheader="Computer" LabelContent="???" Margin="0,0,0,13"/>
+                            <uc:MainComponentTemplate Subheader="projector" LabelContent="xxx" Margin="0"/>
+
+                        </StackPanel>
+                    </ScrollViewer>
+                </uc:TileBackground.TileContext>
+            </uc:TileBackground>
+
+            <uc:TileBackground Title="VERSION INFO" Height="270" Width="226">
+                <uc:TileBackground.TileContext>
+                    <ScrollViewer>
+                        <StackPanel>
+                            <uc:MainComponentTemplate Subheader="Ion" LabelContent="0.0" Margin="0,0,0,13"/>
+                            <uc:MainComponentTemplate Subheader="DSP" LabelContent="0.0" Margin="0,0,0,14"/>
+                            <uc:MainComponentTemplate Subheader="FS Toolbox" LabelContent="0.0" Margin="0,0,0,13"/>
+                        </StackPanel>
+                    </ScrollViewer>
+                </uc:TileBackground.TileContext>
+
+            </uc:TileBackground>
+            <uc:TileBackground Title="TECH SUPPORT" Height="270" Width="264">
+                <uc:TileBackground.TileContext>
+                    <ScrollViewer>
+                        <StackPanel>
+                            <uc:MainComponentTemplate Subheader="Support" LabelContent="+1 (858) 675-1196" Margin="0,0,0,13"/>
+                            <uc:MainComponentTemplate Subheader="Website" LabelContent="Support.fullswinggolf.com" Margin="0,0,0,13"/>
+                            <uc:MainComponentTemplate Subheader="Email" LabelContent="Support@fullswinggolf.com" Margin="0,0,0,13"/>
+                            <uc:MainComponentTemplate Subheader="Main" LabelContent="+1 (858) 675-1196" Margin="0"/>
+
+                        </StackPanel>
+                    </ScrollViewer>
+                </uc:TileBackground.TileContext>
+            </uc:TileBackground>
+        </StackPanel>
+
+    </Grid>
+</UserControl>
